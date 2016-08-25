@@ -11,15 +11,16 @@ using System.Windows.Forms;
 
 namespace COMP123_S2016_Lesson13
 {
-    public partial class GeneratorForm : Form
+    public partial class AbilityGeneratorForm : Form
     {
         // private Instance Object
         private Random _ranNumGen;
 
         private TextBox _firstAbility;
         private TextBox _secondAbility;
+        private TextBox _modifiedAbility;
 
-        public GeneratorForm()
+        public AbilityGeneratorForm()
         {
             InitializeComponent();
         }
@@ -86,7 +87,7 @@ namespace COMP123_S2016_Lesson13
             this.GenerateAbilities();
             FirstAbilityComboBox.SelectedIndex = 0;
             SecondAbilityComboBox.SelectedIndex = 0;
-
+            ModAbilityComboBox.SelectedIndex = 0;
         }
 
         private void SwapButton_Click(object sender, EventArgs e)
@@ -137,6 +138,20 @@ namespace COMP123_S2016_Lesson13
         {
             // make a reference to the second ability selected
             this._secondAbility = ChooseAbility(SecondAbilityComboBox.SelectedIndex);
+        }
+
+        private void ModAbilityComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // make a reference to the modify ability selected
+            this._modifiedAbility = ChooseAbility(ModAbilityComboBox.SelectedIndex);
+        }
+
+        private void ModButton_Click(object sender, EventArgs e)
+        {
+            int ScoreToModify = Convert.ToInt32(this._modifiedAbility.Text);
+            ScoreToModify++;
+            this._modifiedAbility.Text = ScoreToModify.ToString();
+            ModAbilitiesGroupBox.Enabled = false;
         }
     }
 }

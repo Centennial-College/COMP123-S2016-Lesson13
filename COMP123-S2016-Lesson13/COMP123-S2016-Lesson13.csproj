@@ -47,16 +47,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ability.cs" />
-    <Compile Include="GeneratorForm.cs">
+    <Compile Include="AbilityGeneratorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GeneratorForm.Designer.cs">
-      <DependentUpon>GeneratorForm.cs</DependentUpon>
+    <Compile Include="AbilityGeneratorForm.Designer.cs">
+      <DependentUpon>AbilityGeneratorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GeneratorForm.resx">
-      <DependentUpon>GeneratorForm.cs</DependentUpon>
+    <EmbeddedResource Include="AbilityGeneratorForm.resx">
+      <DependentUpon>AbilityGeneratorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
