@@ -153,5 +153,23 @@ namespace COMP123_S2016_Lesson13
             this._modifiedAbility.Text = ScoreToModify.ToString();
             ModAbilitiesGroupBox.Enabled = false;
         }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            // alias for the global Character object
+            Character character = Program.character;
+
+            character.Strength = StrTextBox.Text;
+            character.Dexterity = DexTextBox.Text;
+            character.Constitution = ConTextBox.Text;
+            character.Intelligence = IntTextBox.Text;
+            character.Wisdom = WisTextBox.Text;
+            character.Charisma = ChaTextBox.Text;
+
+            this.Hide();
+            RaceAndClassForm raceAndClassForm = new RaceAndClassForm();
+            raceAndClassForm.PreviousForm = this;
+            raceAndClassForm.Show();
+        }
     }
 }

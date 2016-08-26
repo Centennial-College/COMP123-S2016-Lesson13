@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="COMP123_S2016_Lesson13.Character">
+    <Position X="5" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAEAAAAAAABBAAAAAAAAACAAAACA=</HashCode>
+      <FileName>Character.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Enum Name="COMP123_S2016_Lesson13.Ability">
     <Position X="3" Y="1.75" Width="1.5" />
     <TypeIdentifier>

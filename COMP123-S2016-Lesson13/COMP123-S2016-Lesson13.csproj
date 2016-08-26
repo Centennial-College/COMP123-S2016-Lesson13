@@ -53,10 +53,26 @@
     <Compile Include="AbilityGeneratorForm.Designer.cs">
       <DependentUpon>AbilityGeneratorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Character.cs" />
+    <Compile Include="CreateCharacterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateCharacterForm.Designer.cs">
+      <DependentUpon>CreateCharacterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaceAndClassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaceAndClassForm.Designer.cs">
+      <DependentUpon>RaceAndClassForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AbilityGeneratorForm.resx">
       <DependentUpon>AbilityGeneratorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCharacterForm.resx">
+      <DependentUpon>CreateCharacterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -67,7 +83,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="ClassDiagram1.cd" />
+    <EmbeddedResource Include="RaceAndClassForm.resx">
+      <DependentUpon>RaceAndClassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
